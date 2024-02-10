@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Üniversite Not Ortalaması Hesaplama</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="pageTitle">Üniversite Not Ortalaması Hesaplama Aracı </h1>
+    <div id="languageSelection">
+      <label for="languageSelect" id="languageLabel">Dil:</label>
+      <select id="languageSelect" onchange="changeLanguage()">
+        <option value="tr">Türkçe</option>
+        <option value="en">English</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="ar">العربية</option>
+        <option value="ru">русский</option>
+        <option value="fa">فارسی</option>
+        <option value="el">ελληνικά</option>
+        <option value="ur">اردو</option>
+        <option value="bn">বাংলা</option>
+        <option value="zh">中文</option>
+    </select>
+    </div>
+    <div id="options">
+      <input type="radio" id="option1" name="option" value="option1" checked>
+      <label for="option1" id="labelOption1">Sadece dönem not ortalamasını öğrenmek istiyorum</label><br>
+      <input type="radio" id="option2" name="option" value="option2">
+      <label for="option2" id="labelOption2">Hem dönem hem de genel not ortalamasını öğrenmek istiyorum</label>
+    </div>
+    <div id="gradeSystem">
+      <label for="gradeSelect" id="gradeSelectLabel">Not Sistemi:</label>
+      <select id="gradeSelect">
+        <option value="option1">AA, BA, BB, CB, CC, DC, DD, FD, FF</option>
+        <option value="option2">AA, AB, BA, BB, BC, CB, CC, CD, DC, DD, FF</option>
+        <option value="option3">A, A-, B+, B, B-, C+, C, C-, D+, D, D-, F</option>
+        <option value="option4">A1, A2, A3, B1, B2, B3, C1, C2, C3, D, F</option>
+      </select>
+    </div>
+    <div id="courseNumber">
+      <label for="courseCount" id="courseCountLabel">Dönem Ders Sayısı:</label>
+      <input type="number" id="courseCount" min="1" max="80">
+      <button onclick="addCourseFields()" id="addButton">Ekle</button>
+    </div>
+    <div id="courseDetails">
+      <!-- Ders bilgileri dinamik olarak eklenecek -->
+    </div>
+    <div id="buttons">
+      <button onclick="calculate()" id="calculateButton">Hesapla</button>
+      <button onclick="clearFields()" id="clearButton">Temizle</button>
+    </div>
+    <div id="result">
+      <!-- Hesaplama sonucu burada gösterilecek -->
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

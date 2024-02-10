@@ -1,0 +1,294 @@
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Bu, container'ı dikey eksende ortalar */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık */
+#pageTitle {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    animation: titleAnimation 1s ease-in-out forwards;
+}
+
+@keyframes titleAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dil Seçimi */
+#languageSelection {
+    margin-bottom: 20px;
+    text-align: center;
+    animation: languageAnimation 1s ease-in-out forwards;
+}
+
+@keyframes languageAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#languageLabel {
+    font-weight: bold;
+    color: #333;
+}
+
+#languageSelect {
+    padding: 10px 20px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#languageSelect:hover {
+    background-color: #ccc;
+}
+
+/* Seçenekler */
+#options {
+    margin-bottom: 20px;
+    animation: optionsAnimation 1s ease-in-out forwards;
+    font-size: 18px; /* Yazı büyüklüğü */
+}
+
+@keyframes optionsAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Not Sistemi */
+#gradeSystem {
+    margin-bottom: 20px;
+    animation: gradeSystemAnimation 1s ease-in-out forwards;
+    font-size: 18px; /* Yazı büyüklüğü */
+}
+
+@keyframes gradeSystemAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#gradeSelectLabel {
+    font-weight: bold;
+    color: #333;
+}
+
+#gradeSelect {
+    padding: 10px 20px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#gradeSelect:hover {
+    background-color: #ccc;
+}
+
+/* Dönem Ders Sayısı */
+#courseNumber {
+    margin-bottom: 20px;
+    animation: courseNumberAnimation 1s ease-in-out forwards;
+    font-size: 18px; /* Yazı büyüklüğü */
+}
+
+@keyframes courseNumberAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#courseDetails {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Eklenen dersler arasında 10 piksel boşluk */
+    animation: courseDetailsAnimation 1s ease-in-out forwards;
+}
+
+@keyframes courseDetailsAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.course {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.course input[type="text"],
+.course input[type="number"],
+.course select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.course input[type="text"],
+.course input[type="number"] {
+    flex: 1; /* Otomatik genişlik ayarı */
+}
+
+.course button {
+    padding: 10px 20px;
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.course button:hover {
+    background-color: #900;
+}
+#courseCountLabel {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+#courseCount {
+    padding: 10px 20px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#courseCount:hover {
+    background-color: #ccc;
+}
+
+#addButton {
+    padding: 10px 20px;
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#addButton:hover {
+    background-color: #900;
+}
+
+/* Butonlar */
+#buttons {
+    margin-bottom: 20px;
+    text-align: center;
+    animation: buttonsAnimation 1s ease-in-out forwards;
+}
+
+@keyframes buttonsAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #900;
+}
+
+/* Sonuç */
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px; /* Yazı büyüklüğü */
+    color: #333;
+    animation: resultAnimation 1s ease-in-out forwards;
+}
+
+@keyframes resultAnimation {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
